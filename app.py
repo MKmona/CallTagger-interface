@@ -6,7 +6,7 @@ import requests
 '''
 
 st.markdown('''
-CallTagger is an application that you can use to classify your text/transcipt
+CallTagger is an application that you can use to classify your text/transcript
 ''')
 
 
