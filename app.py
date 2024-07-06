@@ -19,7 +19,7 @@ user_transcript = st.text_area('Enter a text to be analyzed 👇', max_chars=300
 
 params = {'transcript': user_transcript}
 
-button = st.button('Target Label')
+button = st.button('Predicted Label')
 if button:
     response = requests.get(url=url,
                         params=params).json()
@@ -28,7 +28,9 @@ if button:
     print('button clicked!')
     st.write('Click to get new prediction')
     # st.write('Further clicks are not visible but are executed')
+
     # display the prediction to the user
-    st.write('The predicted label is', str(response['predicted_label']))
+    # st.write('The predicted label is: ', str(response['predicted_label']))
+    st.write(f'The predicted label is: "{str(response['predicted_label'])}"')
 else:
     st.write('Click to get label')
