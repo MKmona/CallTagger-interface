@@ -12,7 +12,6 @@ CallTagger is an application that you can use to classify your text/transcript
 
 url = 'https://mvp-calltagger-sqsyyuiuaq-ew.a.run.app/predict'
 
-#'https://mvp-calltagger-sqsyyuiuaq-ew.a.run.app/predict?transcript='
 
 user_transcript = st.text_area('Enter a text to be analyzed 👇', max_chars=3000)
 # st.write("You entered: ", user_transcript)
@@ -30,7 +29,6 @@ if button:
     # st.write('Further clicks are not visible but are executed')
 
     # display the prediction to the user
-    # st.write('The predicted label is: ', str(response['predicted_label']))
-    st.write(f'The predicted label is: "{str(response['predicted_label'])}"')
+    st.write('The predicted label is: ', str(response['predicted_label']))
 else:
     st.write('Click to get label')
