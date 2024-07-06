@@ -30,7 +30,6 @@ if button:
     # st.write('Further clicks are not visible but are executed')
 
     # display the prediction to the user
-    # st.write('The predicted label is: ', str(response['predicted_label']))
-    st.write(f'The predicted label is: "{str(response['predicted_label'])}"')
+    st.write('The predicted label is: ', str(response['predicted_label']))
 else:
     st.write('Click to get label')
