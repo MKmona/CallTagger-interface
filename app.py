@@ -11,7 +11,7 @@ st.markdown('''
 CallTagger is an application that you can use to classify your text/transcript
 ''')
 
-image = Image.open('../CallTagger-interface/images/callCenter_girl.png')
+image = Image.open('images/callCenter_girl.png')
 
 # Images (and most elements in general) are always aligned to the left, to align the image to the center we can use:
 left_co, cent_co,last_co = st.columns(3)
