@@ -1,5 +1,6 @@
 import streamlit as st
 import requests
+from PIL import Image
 
 '''
 # CallTagger frontend
@@ -9,6 +10,9 @@ st.markdown('''
 CallTagger is an application that you can use to classify your text/transcript
 ''')
 
+image = Image.open('callCenter.jpg')
+
+st.image(image, caption='Call Center Service')
 
 url = 'https://mvp-calltagger-sqsyyuiuaq-ew.a.run.app/predict'
 
